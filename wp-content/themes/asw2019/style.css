@@ -1,0 +1,27 @@
+/*
+Theme Name: 138 In Progress Custom Theme
+Theme URI:
+Author: Elliot Toman
+Author URI: https://www.asubtleweb.com
+Description: A custom theme for 138 In Progress Publishing
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: 
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,700|Noto+Serif:400,400i&display=swap');
+@import url('assets/base.css');
+@import url('assets/desktop.css');
+
+* { margin: 0px; padding: 0px; }
+
+body, html { height: 100%; }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+

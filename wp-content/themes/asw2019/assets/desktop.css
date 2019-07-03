@@ -1,0 +1,65 @@
+@media screen and ( min-width: 768px ) {
+
+    .body-container {
+        align-items: center; 
+        display: flex;
+        min-height: calc( 100vh - 4rem );
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .body-wrap {
+        margin: 2rem;
+        max-width: 800px;
+    }
+    
+    main.posts.home {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    main.posts.home .post {
+        flex-basis: calc( 50% - 0.5rem );
+    }
+
+    main.posts.home .post .thumbnail {
+        align-items: center;
+        background-color: rgba(0,0,0,0.05);
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    main.posts.home .post .thumbnail img {
+        max-height: 400px;
+        max-width: calc( 100% - 2rem );
+    }
+
+    main.posts .post.single {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    main.posts .post.single .content {
+        flex-basis: 100%;
+    }
+
+    main.posts .post.single.has-thumbnail .thumbnail {
+        flex-basis: calc( 33.33% - 1rem );
+        padding-top: 0.5rem;
+    }
+
+    main.posts .post.single.has-thumbnail .content {
+        flex-basis: calc( 66.66% - 1rem )
+    }
+
+    header .titles h1,
+    header .titles h2,
+    header .titles .divider {
+        font-size: 2rem;
+    }
+
+}

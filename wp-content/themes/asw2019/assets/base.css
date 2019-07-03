@@ -1,0 +1,126 @@
+body {
+    background: white;
+    color: black;
+    font: normal 16px 'Noto Serif', serif;
+}
+
+h1 {
+    display: block;
+    font: 400 2rem 'Archivo', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    display: block;
+    font: 700 1.5rem 'Archivo', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    display: block;
+    font: 700 1rem 'Archivo', sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.body-wrap {
+    display: block;
+    margin: 1rem;
+}
+
+header .titles a {
+    text-decoration: none;
+}
+
+header .titles h1,
+header .titles h2,
+header .titles .divider {
+    display: inline-block;
+    font: 700 1rem 'Archivo', sans-serif;
+    line-height: 1.5;
+}
+
+header .titles h2 {
+    font-weight: 400;
+}
+
+header .titles .divider {
+    margin: 0 0.5rem;
+    opacity: 0.5;
+}
+
+.posts .post {
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.posts .post h2 {
+    border: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+    margin: 0.5rem auto;
+    padding: 0.5rem 0;
+}
+
+.posts .post h3 {
+    margin-bottom: 0.5rem;
+}
+
+.posts .post.single h3 {
+    margin-top: 0.5rem;
+}
+
+.posts .post p,
+.posts .post .excerpt {
+    text-align: left;
+}
+
+.posts .post .readmore {
+    white-space: nowrap;
+}
+
+footer {
+    display: block;
+    font: normal 1rem 'Archivo', sans-serif;
+    line-height: 1.5;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+footer:before {
+    border-top: 2px solid black;
+    content: ' ';
+    display: block;
+    margin: 2rem auto;
+    max-width: 50%;
+}
+
+.attribution a {
+    opacity: 0.5;
+    font-style: normal;
+}
+
+.onethirtyeight .wp-block-quote {
+    border-left: 2px solid #000;
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.onethirtyeight .wp-block-button__link {
+    font-family: 'Archivo', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.onethirtyeight .has-white-color {
+    color: white;
+}
+
+.onethirtyeight .has-black-background-color {
+    background-color: black;
+}
