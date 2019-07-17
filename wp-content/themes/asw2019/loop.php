@@ -1,7 +1,12 @@
 <main class="posts <?php if( is_home() ) { echo 'home'; } ?>">
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<?php $thumbnail = get_the_post_thumbnail_url(); ?>
+<?php
+    $thumbnail = get_the_post_thumbnail_url();
+    $book_title = get_post_meta( $post->ID, 'book_title', true );
+    $book_subtitle = get_post_meta( $post->ID, 'book_subtitle', true );
+?>
+
 
 <?php if( is_home() ) { ?>
 
@@ -13,7 +18,13 @@
         </div>
         <div class="title">
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                <h2><?php the_title(); ?></h2>
+                <?php if( $book_title != '' ) { 
+                    echo '<h2>' . $book_title . '</h2>';
+                    echo '<h3>' . $book_subtitle . '</h3>';
+                
+                } else { ?>
+                    <h2><?php the_title(); ?></h2>
+                <?php } ?>
             </a>
         </div>
         <div class="excerpt">

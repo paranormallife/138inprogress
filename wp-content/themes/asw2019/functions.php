@@ -96,26 +96,19 @@ function asw_register_custom_types() {
 
 
 function asw_add_meta() {
-	add_meta_box('hero_subtitle_field', 'Subtitle', 'hero_subtitle', array('hero'), 'normal', 'high');
-	add_meta_box('hero_summary_field', 'Summary', 'hero_summary', array('hero'), 'normal', 'high');
-	add_meta_box('hero_url_field', 'URL', 'hero_url', array('hero'), 'normal', 'high');
+	add_meta_box('book_title_field', 'Book Title', 'book_title', array('post'), 'normal', 'high');
+	add_meta_box('book_subtitle_field', 'Book Subtitle', 'book_subtitle', array('post'), 'normal', 'high');
 }
 
-function hero_subtitle($post) {
-    echo '<div id="hero_subtitle">';
-    echo '<input type="text" style="width:95%;" id="hero_subtitle" name="hero_subtitle" placeholder="Subtitle" value="' . get_post_meta($post->ID, 'hero_subtitle', true) . '" />';
+function book_title($post) {
+    echo '<div id="book_title">';
+    echo '<input type="text" style="width:95%;" id="book_title" name="book_title" placeholder="Title" value="' . get_post_meta($post->ID, 'book_title', true) . '" />';
     echo '</div>';
 }
 
-function hero_summary($post) {
-    echo '<div id="hero_summary">';
-    echo '<textarea style="width:95%;" id="hero_summary" name="hero_summary" placeholder="Summary...">' . get_post_meta($post->ID, 'hero_summary', true) . '</textarea>';
-    echo '</div>';
-}
-
-function hero_url($post) {
-    echo '<div id="hero_url">';
-    echo '<input type="text" style="width:95%;" id="hero_url" name="hero_url" placeholder="/page-permalink" value="' . get_post_meta($post->ID, 'hero_url', true) . '" />';
+function book_subtitle($post) {
+    echo '<div id="book_title">';
+    echo '<input type="text" style="width:95%;" id="book_subtitle" name="book_subtitle" placeholder="Subtitle" value="' . get_post_meta($post->ID, 'book_subtitle', true) . '" />';
     echo '</div>';
 }
 
@@ -131,43 +124,15 @@ function asw_save_meta($post_id) {
        return $post_id;
     }
 
-    if (isset($_POST['hero_subtitle'])) {
-       update_post_meta($post_id, 'hero_subtitle', $_POST['hero_subtitle']);
+    if (isset($_POST['book_title'])) {
+       update_post_meta($post_id, 'book_title', $_POST['book_title']);
     }
 
-    if (isset($_POST['hero_summary'])) {
-       update_post_meta($post_id, 'hero_summary', $_POST['hero_summary']);
-    }
-
-    if (isset($_POST['hero_url'])) {
-       update_post_meta($post_id, 'hero_url', $_POST['hero_url']);
+    if (isset($_POST['book_subtitle'])) {
+       update_post_meta($post_id, 'book_subtitle', $_POST['book_subtitle']);
     }
 	
 }
-
-
-function asw_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Home Instagram Feed',
-		'id'            => 'home_instagram',
-		'before_widget' => '<div class="home-instagram">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
-		'name'          => 'Home Below Calendar',
-		'id'            => 'home_below_calendar',
-		'before_widget' => '<div class="post-content below-calendar>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 style="display: none">',
-		'after_title'   => '</h2>',
-	) );
-
-}
-add_action( 'widgets_init', 'asw_widgets_init' );
 
 function mytheme_setup() {
     // Add support for Block Styles

@@ -63,12 +63,12 @@ header .titles .divider {
     margin: 1rem 0;
 }
 
-.posts .post h2 {
+.posts .post .title {
     border: 2px solid black;
     border-left: 0;
     border-right: 0;
     margin: 0.5rem auto;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.25rem 0;
 }
 
 .posts .post h3 {
