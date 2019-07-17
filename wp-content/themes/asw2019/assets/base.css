@@ -1,25 +1,28 @@
 body {
     background: white;
     color: black;
-    font: normal 16px 'Noto Serif', serif;
+    font: normal 16px 'Lato', sans-serif;
 }
 
 h1 {
     display: block;
-    font: 400 2rem 'Archivo', sans-serif;
-    text-transform: uppercase;
+    font: 400 2rem 'EB Garamond', serif;
+    font-variant: small-caps;
+    text-transform: none;
 }
 
 h2 {
     display: block;
-    font: 700 1.5rem 'Archivo', sans-serif;
-    text-transform: uppercase;
+    font: 500 1.5rem 'EB Garamond', serif;
+    font-variant: small-caps;
+    text-transform: none;
 }
 
 h3 {
     display: block;
-    font: 700 1rem 'Archivo', sans-serif;
-    text-transform: uppercase;
+    font: 500 1rem 'EB Garamond', serif;
+    font-variant: small-caps;
+    text-transform: none;
 }
 
 a {
@@ -41,7 +44,8 @@ header .titles h1,
 header .titles h2,
 header .titles .divider {
     display: inline-block;
-    font: 700 1rem 'Archivo', sans-serif;
+    font: 500 1rem 'EB Garamond', serif;
+    font-variant: small-caps;
     line-height: 1.5;
 }
 
@@ -86,7 +90,7 @@ header .titles .divider {
 
 footer {
     display: block;
-    font: normal 1rem 'Archivo', sans-serif;
+    font: normal 1rem 'EB Garamond', serif;
     line-height: 1.5;
     margin: 2rem 0;
     text-align: center;
@@ -112,7 +116,7 @@ footer:before {
 }
 
 .onethirtyeight .wp-block-button__link {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'EB Garamond', serif;
     font-style: normal;
     text-transform: uppercase;
 }
