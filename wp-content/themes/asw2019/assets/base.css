@@ -128,3 +128,10 @@ footer:before {
 .onethirtyeight .has-black-background-color {
     background-color: black;
 }
+
+.homepage-contact {
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+    width: 100%;
+}
