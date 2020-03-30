@@ -11,6 +11,9 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/
 */error_log/
+*/error_log
+*error_log
+*.shtml
 
 .htaccess
 /.htaccess

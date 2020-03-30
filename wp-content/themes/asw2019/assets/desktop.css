@@ -16,11 +16,16 @@
     main.posts.home {
         align-items: flex-start;
         display: flex;
+		flex-wrap: wrap;
         justify-content: space-between;
     }
     
     main.posts.home .post {
         flex-basis: calc( 50% - 0.5rem );
+    }
+	
+	main.posts.home .post:first-of-type {
+        flex-basis: 100%;
     }
 
     main.posts.home .post .thumbnail {
@@ -33,6 +38,11 @@
 
     main.posts.home .post .thumbnail img {
         max-height: 400px;
+        max-width: calc( 100% - 2rem );
+    }
+	
+	main.posts.home .post:first-of-type .thumbnail img {
+        max-height: 600px;
         max-width: calc( 100% - 2rem );
     }
 
